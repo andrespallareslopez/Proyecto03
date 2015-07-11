@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+	   	<script src="bower_components/angular/angular.js" ></script>
+	    <script src="js/factory.js" ></script>
+		<link rel="stylesheet" href="styles/style.css">
+		
+	</head>
+	<body>
+	   <div ng-controller="MyController">
+		  <div id='col1'>
+			  <div id='PanelGrupos'>
+				  <div class='caja' ng-repeat='gr in grupos' >
+					    <div class='cajaplantilla' ><p>{{gr.Descripcion}}</p></div>
+				  </div>
+			  </div>
+			  <div id='PanelFamilias'>
+				  <div class='caja1' ng-repeat='fam in familias' >
+					 <div class='cajaplantilla' >
+                          {{fam.Descripcion}}
+                     </div>
+				  </div>
+					  
+			  </div>
+		  </div>
+		  <div id='col2' >
+			  <div id='PanelProductos'>
+				  
+			  </div>
+			  <div id='PanelFactura' >
+				  
+			  </div>
+		  </div> 
+	   </div> 	
+	</body>
+</html>
